@@ -56,7 +56,9 @@ const LongCard = ({ data }) => {
         </div> */}
       </div>
 
-      <div className={styles.price}> {data.type == 0 ? 'Free' : `${data.price} Tk`}</div>
+      <div className={styles.price}>
+        {data.type == 0 ? "Free" : `${data.price} Tk`}
+      </div>
     </div>
   );
 };

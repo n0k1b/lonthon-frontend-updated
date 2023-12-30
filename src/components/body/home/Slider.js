@@ -1,7 +1,7 @@
 import styles from "./Slider.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Slider from "react-slick";
 import LongCard from "../../UI/LongCard";
 
@@ -15,7 +15,7 @@ const MultipleItems = ({ data }) => {
     className: "center",
     centerMode: true,
     infinite: true,
-    centerPadding: "7vw",
+    centerPadding: "30vw",
     slidesToShow: 3,
     speed: 500,
     arrows: false,
@@ -24,16 +24,19 @@ const MultipleItems = ({ data }) => {
         breakpoint: 1160,
         settings: {
           slidesToShow: 2,
+          centerPadding: "0vw",
         },
       },
       {
-        breakpoint: 500,
+        breakpoint: 850,
         settings: {
           slidesToShow: 1,
+          centerPadding: "0vw",
         },
       },
     ],
   };
+
   return (
     <div className={styles.container}>
       <button
