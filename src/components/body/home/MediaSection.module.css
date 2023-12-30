@@ -1,0 +1,22 @@
+.titleCon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 44px;
+  color: #6d6d6d;
+}
+
+.view_all {
+  font-size: 18px;
+  cursor: pointer;
+  color: #6d6d6d;
+}
+
+.carausel_section {
+  height: 593px;
+  background: #ffffff;
+  padding-top: 50px;
+}
